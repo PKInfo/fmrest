@@ -1,12 +1,10 @@
 # FMREST
-[![Build Status](https://travis-ci.org/thomann061/fmrest.svg?branch=master)](https://travis-ci.org/thomann061/fmrest)
-[![npm version](https://badge.fury.io/js/fmrest.svg)](https://badge.fury.io/js/fmrest)
 
 A Node.js wrapper for Filemaker's Data API (REST API)
 
 This API was tested with Filemaker 18 Data Api and using Filemaker ID login services.
 
-Development is in progress.
+Development is in progress. This repository was forked from https://travis-ci.org/thomann061/fmrest. Most of this README was created by him.
 
 ## Getting Started
 
@@ -15,8 +13,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 You will need Filemaker Server 18 and enable the Data API.  There is plenty of online documentation describing how to do this.
-
-I have also supplied my testing file - db.fmp12.
 
 ## Running the tests
 
@@ -295,7 +291,3 @@ filemaker
 ## Contributing / Code of Conduct
 
 Please read [CONTRIBUTING.md](https://github.com/thomann061/fmrest/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/thomann061/fmrest/blob/master/CODE_OF_CONDUCT.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

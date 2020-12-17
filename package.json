@@ -13,20 +13,9 @@
     "request": "^2.87.0",
     "request-promise": "^4.2.2"
   },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-jasmine": "^4.0.0",
-    "gulp-jsdoc3": "^2.0.0",
-    "gulp-jshint": "^2.1.0",
-    "jasmine": "^3.1.0",
-    "jshint": "^2.11.0"
-  },
-  "scripts": {
-    "test": "jasmine"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thomann061/fmrest.git"
+    "url": "https://github.com/PKInfo/fmrest.git"
   },
   "keywords": [
     "filemaker",
@@ -34,7 +23,6 @@
     "api",
     "rest"
   ],
-  "author": "Jacob Thomann",
-  "email": "thomann061@gmail.com",
+  "author": "Jacob Thomann (original)",
   "license": "ISC"
 }
