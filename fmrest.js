@@ -1,11 +1,11 @@
-const AuthAPI = require('./authapi.js');
-const RecordAPI = require('./recordapi.js');
-const FindAPI = require('./findapi.js');
-const GlobalAPI = require('./globalapi.js');
-const Request = require('../lib/request.js');
-const Sort = require('../lib/sort.js');
-const Global = require('../lib/global.js');
-const Portal = require('../lib/portal.js');
+const AuthAPI = require('./lib/authapi.js');
+const RecordAPI = require('./lib/recordapi.js');
+const FindAPI = require('./lib/findapi.js');
+const GlobalAPI = require('./lib/globalapi.js');
+const Request = require('./lib/request.js');
+const Sort = require('./lib/sort.js');
+const Global = require('./lib/global.js');
+const Portal = require('./lib/portal.js');
 
 /**
  * An API that wraps all common classes together
@@ -15,7 +15,6 @@ const Portal = require('../lib/portal.js');
  * {@link GlobalAPI}
  */
 class Fmrest {
-
     /**
      * Create an Fmrest object
      * @param {Object} obj - An object
@@ -106,11 +105,11 @@ class Fmrest {
      * @param {number} obj.limit - how many records should be returned
      * @param {Array} obj.sorts - An array of {@link Sort} Objects
      * @param {Array} obj.portals - An array of {@link Portal} Objects
-     * @return {Promise} - A promise that resolves with multiple records 
-     * 
+     * @return {Promise} - A promise that resolves with multiple records
+     *
      */
-    getAllRecords({offset, limit, sorts, portals} = {}) {
-        return this.Record.getAll({offset, limit, sorts, portals});
+    getAllRecords({ offset, limit, sorts, portals } = {}) {
+        return this.Record.getAll({ offset, limit, sorts, portals });
     }
 
     /**
@@ -120,12 +119,12 @@ class Fmrest {
      * @param {Array} obj.sorts - An array of {@link Sort} Objects
      * @param {number} obj.offset - starting point of records to return
      * @param {number} obj.limit - how many records should be returned
-     * @param {Array} obj.portals - An array of {@link Portal} Objects 
+     * @param {Array} obj.portals - An array of {@link Portal} Objects
      * @return {Promise} - A promise that resolves with multiple records
-     * 
+     *
      */
-    find({requests, sorts, offset, limit, portals} = {}) {
-        return this.Find.exec({requests, sorts, offset, limit, portals});
+    find({ requests, sorts, offset, limit, portals } = {}) {
+        return this.Find.exec({ requests, sorts, offset, limit, portals });
     }
 
     /**
