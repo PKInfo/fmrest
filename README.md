@@ -277,7 +277,7 @@ filemaker
 ## TODO
 
 - [x] Layout is optional at login
-- [ ] Add optional fm data source to login body
+- [x] Add optional fm data source to login body
 - [ ] Add support for OAuth
 - [x] Add support for filemaker id login
 - [x] Add support for Container Data
