@@ -22,8 +22,8 @@ Almost every function returns a Promise except createRequest, createGlobal and c
 
 Note: the npm version of this wrapper doesn't seem to work quite right, so it is better to use download the code into your project and require it from there.
 
+```javascript
 const Fmrest = require('/path/to/fmrest/lib/fmrest');
-
 
 // Set configuration
 // Specify fmid for use with your Filemaker ID
