@@ -12,24 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You will need Filemaker Server 18 and enable the Data API.  There is plenty of online documentation describing how to do this.
-
-## Running the tests
-
-Run all tasks including tests:
-
-```javascript
-npm i gulp-cli -g
-gulp
-```
-
-Run only tests:
-
-```javascript
-jasmine
-```
-
-Note: fmrestSpec.js is commented out; uncomment it to test in your own environment
+You will need Filemaker Server and enable the Data API.  There is plenty of online documentation describing how to do this.
 
 ## API Code Samples
 
@@ -37,11 +20,9 @@ Almost every function returns a Promise except createRequest, createGlobal and c
 
 ### Configuration
 
-```javascript
-npm install fmrest
+Note: the npm version of this wrapper doesn't seem to work quite right, so it is better to use download the code into your project and require it from there.
 
-
-const Fmrest = require('fmrest');
+const Fmrest = require('/path/to/fmrest/lib/fmrest');
 
 
 // Set configuration
@@ -284,10 +265,3 @@ filemaker
 - [ ] Global fields are still not working (help :)
 - [ ] Add script query parameters to Records
 
-## Resources
-
-[Filemaker Data 18 API Guide](https://fmhelp.filemaker.com/docs/18/en/dataapi/)
-
-## Contributing / Code of Conduct
-
-Please read [CONTRIBUTING.md](https://github.com/thomann061/fmrest/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/thomann061/fmrest/blob/master/CODE_OF_CONDUCT.md) for details on our code of conduct, and the process for submitting pull requests to us.
