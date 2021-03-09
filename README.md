@@ -28,11 +28,9 @@ const Fmrest = require('/path/to/fmrest/lib/fmrest');
 // Set configuration
 // Specify fmid for use with your Filemaker ID
 const filemaker = new Fmrest({
-    user: "user",
-    password: "pass",
+    encodedUserAndPassword: "fmDAPI Authorization Token", // see https://fmhelp.filemaker.com/docs/18/en/dataapi/#connect-database_log-in
     host: "host",
     database: "db",
-    auth: "fmid", // basic or fmid
 //  layout: "db"  // optional at time of login
 });
 
